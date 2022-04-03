@@ -109,7 +109,7 @@ const App = () => {
   const [tooManyResult, setTooNameResult] = useState(false)
 
   useEffect(() => {
-    axios.get('http://localhost:3001/countries')
+    axios.get('https://restcountries.com/v3.1/all')
       .then(resp => {
         setCountries(resp.data)
       })
