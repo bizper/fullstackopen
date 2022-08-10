@@ -113,7 +113,7 @@ const App = () => {
       .then(resp => {
         setCountries(resp.data)
       })
-  }, [])
+  }, [countries])
 
   const handleInput = (event) => {
     const search = event.target.value
